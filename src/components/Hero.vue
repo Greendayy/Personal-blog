@@ -4,17 +4,17 @@ import { defineProps } from 'vue';
 defineProps({
   title: {
     type: String,
-    default: 'Become a Vue Dev',
+    default: 'The Shape of Thoughts',
   },
   subtitle: {
     type: String,
-    default: 'Find the Vue job that fits your skills and needs',
+    default: 'Knowledge and Action Are One',
   },
 });
 </script>
 
 <template>
-  <section class="bg-green-700 py-20 mb-4">
+  <section class="bg-violet-300 py-20 mb-4">
     <div
       class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center"
     >

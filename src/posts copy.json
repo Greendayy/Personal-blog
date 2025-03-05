@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "学习 React：一个新手的第一次尝试",
+      "content": "React 是前端框架，核心是组件化和单向数据流。开始学习时，用 npx create-react-app my-app 创建项目，安装简单，几分钟就能跑起来。组件是 React 的基础，比如一个按钮可以写成 function Button() { return <button>Click</button>; }，复用方便。状态管理用 useState，比如 const [count, setCount] = useState(0)，点击按钮 setCount(count + 1) 更新数字。实践时，我做了一个计数器：function App() { const [number, setNumber] = useState(0); return <div><h1>React Counter</h1><p>{number}</p><button onClick={() => setNumber(number + 1)}>加一</button></div>; }。JSX 开始不好懂，习惯后发现它很灵活，能直接在 JS 里写 HTML。建议初学者先看官方文档 Tutorial 部分，再做小项目巩固。遇到问题多用 console.log 调试，比如检查 state 是否更新。下一步计划学 useEffect 处理副作用，比如数据请求。",
+      "time": "2025-03-03T09:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "学习 Vue：我也能做网页了！",
+      "content": "Vue 是轻量前端框架，适合初学者。安装用 npm create vue@latest，几步就能生成项目。核心是响应式和单文件组件，比如 <template><p>{{ count }}</p></template> 和 <script setup>import { ref } from 'vue'; const count = ref(0);</script>，count 变化自动更新页面。事件绑定用 @click，比如 <button @click=\"count.value++\">加一</button>，简单直接。实践时，我做了计数器：<template><div><h1>Vue Counter</h1><p>{{ clicks }}</p><button @click=\"clicks++\">点我</button></div></template><script setup>import { ref } from 'vue'; const clicks = ref(0);</script>。Vue 的模板语法像 HTML，容易上手。建议从 Vue 官方文档的 Guide 开始，重点学 ref、v-for 和 v-if。调试时用 Vue Devtools 查看数据变化。下一步我要试 vue-router 做多页面。",
+      "time": "2025-03-04T14:30:00Z"
+    },
+    {
+      "id": "3",
+      "title": "比较 React 和 Vue：新手怎么选？",
+      "content": "React 和 Vue 都是主流前端框架，适合不同场景。React 用 JSX，HTML 写在 JS 里，如 function Button() { const [count, setCount] = useState(0); return <button onClick={() => setCount(count + 1)}>{count}</button>; }，灵活但需学新语法。Vue 用模板，<template><button @click=\"count++\">{{ count }}</button></template><script setup>import { ref } from 'vue'; const count = ref(0);</script>，接近 HTML，初学者上手快。React 用 Hooks 管理状态，Vue 用 ref/reactive，React 更自由，Vue 更直观。生态上，React 有 React Router 和 Redux，社区大但配置多；Vue 内置 vue-router 和 pinia，开箱即用。实践时，React 适合复杂项目，Vue 适合中小型。我选 Vue 做博客，因为简单直接，调试用 Vue Devtools 很方便。建议新手先学 Vue 的基础，再试 React 的 JSX 和 Hooks。",
+      "time": "2025-03-05T11:15:00Z"
+    }
+  ]
+}
